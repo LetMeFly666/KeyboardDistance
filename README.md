@@ -8,6 +8,8 @@ Online Address: （在线地址：）  [https://keyboarddistance.letmefly.xyz](h
 
 ---
 
+## Introduction（介绍）
+
 The keyboard looks like:（键盘形状如下：）
 
 ```
@@ -24,3 +26,14 @@ We define that the minimum distance of two key which have the same border is 2.�
 
 For example, The keys with the shortest distance of 2 from F are R, T, G, V, C, and D.（例如，和F最短距离为2的按键有R、T、G、V、C和D）
 
+## Usage（用法）
+
+Use the ```keyboarddistance``` class in ```main.cpp``` directly.（直接使用```main.cpp```里的```KeyboardDistance```类即可。）
+
+```cpp
+KeyboardDistance kd;
+char a, b;
+while (cin >> a >> b) {
+    cout << kd.getDistance(a, b) << endl;
+}
+```
